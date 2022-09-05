@@ -37,15 +37,15 @@ GPIO0 pini GPIO17 olarak değiştirildi
 ## Kart Özellikleri
 
 ### Donanım Özellikleri
-- Mikrodenetleyici ESP32
-- HY931147C POE Destekli RJ45 Modulü
-- LAN8270 10/100 Mbit Ethernet Entegresi
-- ILI9488 3.5 inç Ekran
-- RFID Okuyucu Mini RFID-RC522 13.56 MHz 
-- SD Kart Yuvası
+- ESP32(SoC) MCU
+- HY931147C POE  RJ45 Modulü
+- LAN8270Ai 10/100Mbit Ethernet Chip
+- ILI9488 3.5" IPS Ekran
+- Mini RFID RC522 13.56 MHz 
+- Mikro SD Kart Yuvası
 - LM2596 Buck Regülatör
-- HK19F 5V Röle
-- ULN2003 
+- HK19F-5V Çift Kontak Röle
+- ULN2003 SOIC-16
 - PC817 (Kapı durumlarını kontrol etmek için)
 - Butonlar (WiFi üzerinden ayar ve Reset için)
 - Buzzer
@@ -87,13 +87,15 @@ ESP32, LAN8720, RFID, SD Kart bağlantıları için de 3.3V regülatör kullanı
 
 Kartın beslemesi 2 şekilde yapılabilmektedir. 
 
-- POE
+
 ```
+# POE
 Kart POE üzerinden 35V'a kadar beslenebilmektedir. 
 Böylece kablo maliyeti ortadan kalkmakta, montajı kolay olmakta ve kablo kalabalığı da ortadan kalkmaktadır.
 ```
-- ADAPTÖR
+
 ```
+# ADAPTÖR
 POE kullanılmadığı takdirde 12-35V aralığında adaptör ile harici olarak beslenebilmektedir.
 ```
 
