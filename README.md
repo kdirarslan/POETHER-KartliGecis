@@ -1,6 +1,6 @@
 ## POETHER Kartli Geçis Sistemi
 
-ESP32 ve LAN8720 Ethernet Entegresi kullanarak TCP/IP üzerinden haberleşme sağlayan
+ESP32 ve LAN8720 Ethernet Entegresi kullanarak TCP/IP üzerinden haberleşme sağlayan POE (Power Over Ethernet) destekli 
 Kapı girişlerinde, turnike sistemlerinde, yemekhane otomasyonlarında kullanılmak üzere,
 geliştirilen cihaz.
 
